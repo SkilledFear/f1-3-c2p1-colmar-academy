@@ -1,0 +1,879 @@
+html {
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  /*border: 1px red solid;*/
+}
+
+ a{
+  color:skyblue;
+}
+
+a{
+  transition:.5s color linear .100ms, 60ms font-size linear 50ms;
+
+}
+
+a:hover {
+color:darkgrey;
+}
+
+a:active {
+  font-size: 1.1rem;
+  color:deepskyblue;
+}
+
+span h3{
+  font-family: "gentium basic", times, serif;
+}
+
+h1  {
+  color: deepskyblue;
+  font-family: "oswald", "helvetica", sans-serif;
+  letter-spacing: .15rem;
+}
+
+h3 {
+  color: deepskyblue;
+  font-weight: 700;
+}
+
+span {
+  color:dimgray;
+}
+
+/*-------------------- Navigation-------------------------- */
+
+.mobile-nav {
+  display: none;
+}
+
+nav {
+  display:flex;
+  /*border: 1px red solid;*/
+  display: flex;
+  align-content: center;
+  height:4rem;
+}
+
+
+
+nav ul {
+  align-items: center;
+  width:100%;
+  /*border: 1px red solid;*/
+}
+
+.logo .academy {
+  /*border:1px red solid;*/
+  margin-left:1rem;
+  align-items: center;
+  width:100%;
+}
+
+.logo {
+display:flex;
+/*border: 1px red solid;*/
+color:dimgray;
+width:100%;
+}
+
+nav .links {
+ /*border: 1px red solid;*/
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+#colmar{
+  font-weight: bold;
+}
+
+ul .links {
+  display: flex;
+  width:100%;
+}
+
+.links li {
+  margin-right: 1rem;
+}
+
+.links li a {
+  color: deepskyblue;
+  font-weight: 400;
+  font-family: "oswald", "sans-serif";
+  letter-spacing: .1em;
+}
+
+.links li a{
+  transition:.5s color linear .100ms;
+}
+
+.links li a:hover {
+color:darkgrey;
+}
+
+
+@media only screen and (max-width: 768px){
+
+.logo .academy{
+  margin-left:1rem;
+  }
+
+nav{
+    width:100%;
+  }
+
+ul .links {
+    display:none;
+  }
+
+  .mobile-nav{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+  }
+
+  @media only screen and (max-width: 480px){
+
+  .logo-words{
+    display:none;
+  }
+
+  .logo .academy {
+    margin-left: 1rem;
+  }
+  }
+
+
+
+/*-------------------- Banner-------------------------- */
+
+.banner {
+/*  border: 1px red solid;*/
+  width:100%;
+  background-color: lightgray;
+  z-index: 2;
+  border-top:1px solid darkgray;
+  border-bottom:1px solid darkgray;
+  }
+
+  .banner .all {
+  /* border: 1px red solid;*/
+    display: flex;
+    flex-direction: row;
+    width:100%;
+  }
+
+  .image,.txtbtn{
+    padding-top: 32px;
+    flex-direction: column;
+  }
+
+.image {
+  display: flex;
+/*  border: 1px red solid;*/
+  width:60%;
+  margin-right:40px;
+  margin-left:1.5rem;
+  margin-bottom: 2rem;
+}
+
+.image img {
+width:100%;
+/*border: 1px red solid;*/
+}
+
+.all {
+  display: flex;
+  width:100%;
+}
+
+.txtbtn{
+ /*border: 1px red solid;*/
+  width:50%;
+  background-color: white;
+}
+
+.txtbtn .learn {
+  font-size: 2rem;
+  text-align: center;
+  /*border: 1px red solid;*/
+  width:100%;
+  }
+
+.txtbtn .span {
+  margin-top: .8rem;
+  color: dimgray;
+  /*border:1px red solid;*/
+  text-align:center;
+  margin-left: 2.5rem;
+  margin-right:2.5rem;
+}
+
+.txtbtn,span {
+  justify-content: center;
+}
+
+.txt-btn,.start-btn{
+  justify-content: center;
+  /*border:1px red solid;*/
+}
+
+.start-btn{
+  width:auto;
+  margin-top:1rem;
+  /*border:1px red solid;*/
+}
+
+.start-btn span {
+  background-color: white;
+  padding: .5rem ;
+  border:.5px solid darkgray;
+  border-radius: .2rem;
+  /*border:1px red solid;*/
+  width: 45%;
+  justify-content: center;
+  display: flex;
+  box-shadow: 1px 1px gray;
+  }
+
+
+  @media only screen and (max-width: 768px){
+
+  .image {
+    width:100%;
+    /*border:1px red solid;*/
+    align-items:center;
+  }
+
+  .image img{
+    align-content:center;
+  /*  border:1px red solid;*/
+  }
+
+  .txtbtn {
+    width:100%;
+    padding-bottom: 1rem;
+  /*  border:1px red solid;*/
+   }
+
+   .learn{
+    margin-top: 0;
+    font-size: 1.5rem !important;
+    /*border:1px red solid;*/
+    width:auto;
+
+  }
+
+  .txtbtn .span {
+    width:auto;
+    padding: .2rem auto;
+  /*  border:1px red solid;*/
+  }
+}
+
+@media only screen and (max-width: 480px){
+html{
+  right:0;
+}
+
+.start-btn{
+  padding-bottom: 2rem;
+  /*border:1px red solid;*/
+}
+
+.banner .all{
+  flex-direction: column;
+  /*border:1px red solid;*/
+}
+
+.image {
+  width:100%;
+  margin: 0;
+  padding-bottom: 2rem;
+  /*border:1px red solid;*/
+}
+
+.txtbtn {
+  width:100%;
+  padding-bottom: 1rem;
+}
+
+.learn{
+  margin-top: 0;
+  /*border:1px red solid;*/
+  width:90%;
+}
+}
+
+
+
+
+/*--------------------- Information-------------------- */
+
+.info-img,.right-banner-two{
+  margin-top: 2rem;
+}
+
+.information {
+/* border:1px red solid;*/
+  width:100%;
+  height:auto;
+}
+
+
+/*----------------------- Left side------------------ */
+
+.left-banner-two {
+  width:80%;
+  flex-direction: column;
+  border-right: .5px darkgray solid;
+  border-bottom: .5px darkgray solid;
+  /*border: 1px red solid;*/
+}
+
+.info-img {
+  display: flex;
+  /*border: 1px red solid;*/
+  margin-right:1.5rem;
+  margin-left:1.5rem;
+  margin-bottom: 2rem;
+}
+
+
+.info-img img {
+width:100%;
+/*border: 1px red solid;*/
+height:100%;
+}
+
+
+
+.left-banner-two h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  /*border: 1px red solid;*/
+  margin-left:1.5rem;
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+.left-banner-two span{
+/*  border: 1px red solid;*/
+  margin-left:1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  }
+
+#emanuel{
+font-weight: 700;
+font-size: .7rem;
+letter-spacing: .04rem;
+}
+
+  @media only screen and (max-width: 768px){
+    .practice {
+      font-size: 1.5rem !important;
+    }
+  }
+
+
+/*---------------- Right Side--------------------- */
+ .right-banner-two{
+  flex-direction: column;
+  width:435px;
+  border-bottom: .5px darkgray solid;
+  padding-left: 1rem;
+}
+
+.campus .lecture .orientation{
+  flex-direction: row;
+  /*border: 1px red solid;*/
+  width:auto;
+}
+
+
+.campus,.lecture {
+  margin-top:2rem;
+}
+
+.right-banner-img  {
+  /*border: 1px red solid;*/
+  display:flex;
+  max-width:35%;
+  height:40%;
+  margin:1rem auto;
+}
+
+.orientation,.right-banner-img{
+  margin-top: 0;
+}
+
+.right-banner-img img{
+ width:100%;
+ height:100%;
+}
+
+.info-txt {
+  flex-direction:column;
+  /*border: 1px red solid;*/
+  align-items: center;
+  line-height: 1.1rem;
+  width:100%;
+  text-align: left;
+
+}
+
+.info-txt .h-three{
+  width:100%;
+  font-weight: bold;
+  font-size:.85rem;
+  /*border: 1px red solid;*/
+  text-align: left;
+  color:deepskyblue;
+}
+
+.info-txt,p {
+font-size: .8rem;
+ /*border: 1px red solid;*/
+ width:100%;
+ padding-right: .5rem;
+ margin-bottom:.3rem;
+}
+
+.info-txt .read-more{
+  margin-top: .06rem;
+  font-size: .9rem;
+  width:100%;
+  /*border: 1px red solid;*/
+}
+
+/*.info-txt,.info-text-span{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+}*/
+
+@media only screen and (max-width: 480px){
+.left-banner-two{
+  display:none;
+}
+
+.right-banner-two {
+  padding-bottom: 2rem;
+  padding-top:2rem;
+}
+}
+
+
+
+
+/*------------------ Courses------------------ */
+
+
+.row {
+  /*border:1px red solid;*/
+  margin-bottom:24px;
+  justify-content: center;
+  margin-left: 32px;
+  width:auto;
+  }
+
+  .mobile-learning {
+    display:none;
+  }
+
+
+
+.learning {
+  flex-direction: column;
+/*  border: 1px red solid;*/
+  width:100%;
+  background-color: lightgray;
+  padding-top:2rem;
+  padding-bottom: 2rem;
+  height:auto;
+}
+
+
+  .start {
+   display: flex;
+    margin: 2rem auto;
+    color:deepskyblue;
+    justify-content: center;
+    background-color: white;
+    width:100%;
+    font-size: 2rem;
+    font-weight: bold;
+    }
+
+.course {
+  flex-direction: column;
+  /*border: 1px red solid;*/
+  background-color: white;
+  width:30%;
+  margin-right: 2rem;
+
+}
+
+
+.course-img {
+  max-width:100%;
+/*border: 1px red solid;*/
+
+}
+
+.course-img img {
+  max-width:100%;
+  opacity:.8;
+/*  border: 1px red solid;*/
+}
+
+img:hover{
+  opacity:1;
+}
+
+
+.course-bold {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.course-bold a{
+  border:.5px gray solid;
+  border-radius: 3px;
+  padding: 5px;
+  box-shadow: 1px 1px gray;
+  /*border: 1px red solid;*/
+  letter-spacing: .1rem;
+  width:auto;
+}
+
+.courses{
+  font-style: italic;
+  margin-left: 1rem;
+  margin-bottom:.5rem;
+  font-size: .9rem;
+  margin-top:1rem;
+}
+
+.course-txt{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  line-height: 1.3rem;
+  font-size: .9rem;
+/*  border: 1px red solid;*/
+}
+
+.courses-all-text{
+  flex-direction: column;
+  /*border:1px red solid;*/
+  padding-bottom: 2rem;
+  max-width:100%;
+  position: relative;
+}
+
+@media only screen and (max-width: 1024px){
+
+
+
+  .learning{
+    flex-direction: row;
+    justify-content: center;
+    height:70rem;
+    width:100%;
+  }
+
+.row{
+  flex-direction: column;
+  /*border:1px red solid;*/
+  width: 40%;
+  height:70rem;
+}
+
+.course {
+  /*border:1px red solid;*/
+  width:100%;
+  height:100%;
+  margin-bottom:1rem;
+ }
+}
+
+@media only screen and (max-width: 768px){
+
+   .mobile-learning {
+    margin-top: 0;
+    display:flex;
+  /*border:1px red solid;*/
+    padding-bottom: 2rem;
+    border-bottom:.5px solid gray;
+    width:100%;
+    background-color:lightgray;
+    justify-content: center;
+   }
+
+   .mobile-learning .mobile-column-learning{
+     width:80%;
+    }
+
+  .mobile-column-learning{
+    display:flex;
+    flex-direction: column;
+    width:auto;
+    /*border:1px red solid;*/
+    justify-content: center;
+    width:auto;
+
+    }
+
+  .mobile-column-learning ul {
+  /*  border:1px red solid;*/
+    justify-content: center;
+    width:auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: 0;
+    width:auto;
+   }
+
+    .mobile-column-learning li{
+    width:auto;
+    padding:1rem;
+    margin: .5rem 1rem;
+    border:1px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 1px .5px gray;
+    color:deepskyblue;
+    font-size: .95rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    background-color: white;
+    }
+
+
+  .learning{
+    display:none;
+  }
+}
+
+
+
+  /*----------------------- Thesis-------------------- */
+
+
+
+.thesis {
+flex-direction: row;
+/*border:1px red solid;*/
+  }
+
+.width{
+  width:65%;
+}
+
+.video {
+  margin-top: 0 !important;
+  /*border:1px red solid;*/
+  margin-right:1rem;
+  padding-top: 0px;
+/*  display: flex;*/
+  width: auto;
+}
+
+.video video {
+  padding-top:0;
+  /*border:1px red solid;*/
+  display:flex;
+  margin-top: 0;
+  height:100%;
+  width:100%;
+}
+
+.mobile-video{
+  display:none;
+}
+
+#thesis-heading{
+  font-size:2rem;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 480px){
+  .thesis {
+    display:none;
+    }
+
+
+  .mobile-video {
+    display: flex;
+    width:auto;
+    padding-bottom: 1.5rem;
+    margin-top: 0;
+  }
+
+  .mobile-video video {
+    padding-top:0;
+    /*border:1px red solid;*/
+    display:flex;
+    margin-top: 0;
+    height:100%;
+    width:100%;
+  }
+}
+
+
+
+ /*------------------ Left Banner Last---------------- */
+
+.left-banner-last {
+  flex-direction: column;
+  /*border:1px red solid;*/
+  margin-left: 1.5rem;
+  width:80%;
+
+}
+
+#thesis-heading {
+  text-align: center;
+  /*border:1px red solid;*/
+  margin:2rem auto;
+  width:auto;
+}
+
+
+.left-banner-last .reimagine-span {
+  text-align:left;
+  /*border:1px red solid;*/
+  width:100%;
+  margin-bottom: 2rem;
+}
+
+.reimagine-span {
+  flex-direction: column;
+}
+
+.reimagine-span span{
+  width: 80%;
+  /*border:1px red solid;*/
+}
+
+.left-banner-last .reimagine{
+  text-align:center;
+  /*border:1px red solid;*/
+  width:auto;
+  margin-bottom:1rem;
+  margin-top:1rem;
+
+}
+
+
+/*---------------- Right Banner Last--------------*/
+
+.right-banner-last {
+  width:435px;
+  flex-direction: column;
+}
+
+.info-txt,h3 {
+  /*border:1px red solid;*/
+  text-align: left;
+  width:100%;
+  padding-left: 1rem;
+  line-height: 1.2rem;
+}
+
+.info-txt span {
+  /*border:1px red solid;*/
+  text-align: left;
+  width:100%;
+  padding-left: 1rem;
+}
+
+
+.right-banner-last-img  {
+  max-width:35%;
+  height: 40%;
+/*  border:1px red solid;*/
+}
+
+.right-banner-last-img img{
+  width: 100%;
+  height:100%;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  /*border:1px red solid;*/
+}
+
+
+
+/* -------------------Footer------------------ */
+
+footer {
+  width:100%;
+  border-top:.5px darkgray solid;
+  padding-top:1.2rem;
+  padding-bottom: 1.4rem;
+}
+
+footer span{
+  margin-left:1.5rem;
+  font-size: .9rem;
+  width:100%;
+}
+
+footer .icon {
+/*border:1px red solid;  */
+padding-right: 1rem;
+color:deepskyblue;
+}
+
+
+footer .terms-privacy {
+ /*border:1px red solid;*/
+ justify-content: flex-end;
+}
+
+.privacy{
+  margin-right: 1rem;
+}
+
+
+@media only screen and (max-width: 480px){
+  footer {
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    width:100%;
+  }
+
+  #footer-copyright{
+    font-size: .7rem;
+  }
+
+.footer span{
+  width:100%;
+}
+
+ .privacy {
+  display:none;
+}
+
+.icons {
+  display:flex;
+ }
+}
+
+/** {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}*/
